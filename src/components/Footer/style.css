@@ -1,0 +1,23 @@
+.footer {
+    height: 100px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.FooterBlock > div {
+	width: 178px;
+	margin-top: 30px;
+	float: left;
+	font-size: 18px;
+}
+
+.FooterBlock > img {
+	margin-left: 740px;
+	width: 80px;
+	border-radius: 80px;
+}
+
+.FooterBlock {
+    width: 1000px;
+    margin: 0 auto;
+}

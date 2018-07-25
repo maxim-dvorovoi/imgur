@@ -1,0 +1,52 @@
+.Blocks > .image {
+	display: block;
+	margin: 0 auto;
+}
+
+.image > img {
+	margin-top: 20px;
+	max-width: 1000px;
+	max-height: 500px;
+	border-radius: 10px;
+}
+
+.image > video {
+	margin-top: 20px;
+	max-width: 1000px;
+	max-height: 500px;
+	border-radius: 10px;
+}
+
+.Blocks{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 200px;
+	position: relative;
+}
+
+
+.comment {
+	border-radius: 10px;
+	background-color: #476188;
+	width: 700px;
+	margin: 0 auto;
+    margin-top: 10px;
+	display: block;
+	color: white;
+
+	text-align: left;
+
+}
+
+.comment > p {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.author {
+	background-color: #1e2d44;
+	border-radius: 10px 10px  0px 0px;
+	padding: 5px;
+
+	font-size: 14px;
+}

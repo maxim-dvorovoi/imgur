@@ -1,0 +1,103 @@
+.BlogList {
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.loader {
+  display: block;
+  width: 1000px;
+  text-align: center;
+}
+
+.Category {
+  width: 200px;
+  height: 40px;
+  margin-top: 150px;
+  text-align: left;
+  border-radius: 10px;
+  
+}
+
+
+.Category > p {
+  padding-top: 13px;
+  font-weight: bold;
+}
+
+.ListBlocks {
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ListBlocks > div {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.crop {
+  width: 280px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px ;
+}
+
+.ItemBlock {
+  display: block;
+  width: 280px;
+  height: 295px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.ItemBlock:hover img {
+  opacity: 0.6;
+}
+
+.ItemBlock:hover video {
+  opacity: 0.6;
+}
+
+.ItemBlock img {
+  background-color: white;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.5s;
+}
+
+.ItemBlock video {
+  background-color: white;
+  transition: 0.5s;
+}
+
+.ItemBlock > .TextBlock {
+  height: 90px;
+  overflow: hidden;
+  width: 260px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  background-color: white;
+  transition: 0.5s;
+  position: absolute;
+  font-size: 18px;
+}
+
+
