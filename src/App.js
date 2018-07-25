@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
           <Header/>
-            <div>
+            <div className="Body">
                 <Switch>
                     <Route exact path="/" component={Viral} />
                     <Route exact path="/top" component={Top} />

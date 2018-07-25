@@ -24,6 +24,13 @@
 	position: relative;
 }
 
+.Blocks > p {
+	color: white;
+}
+
+.Blocks > .Category {
+	margin-top: -70px;
+}
 
 .comment {
 	border-radius: 10px;
@@ -41,12 +48,12 @@
 .comment > p {
     padding: 10px;
     margin: 0 auto;
+	color: white;
 }
 
 .author {
 	background-color: #1e2d44;
 	border-radius: 10px 10px  0px 0px;
 	padding: 5px;
-
 	font-size: 14px;
 }

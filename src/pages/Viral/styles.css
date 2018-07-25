@@ -5,17 +5,22 @@
 }
 
 .loader {
+  width: 100%;
+  height: 400px;
   display: block;
-  width: 1000px;
   text-align: center;
+  color: white;
+  background-color: #222222;
 }
 
 .Category {
+  position: absolute;
   width: 200px;
   height: 40px;
-  margin-top: 150px;
+  margin-top: 130px;
   text-align: left;
   border-radius: 10px;
+  color: white;
   
 }
 
@@ -26,7 +31,7 @@
 }
 
 .ListBlocks {
-  top: 30px;
+  top: 220px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -40,6 +45,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #222222;
 }
 
 .crop {
@@ -54,9 +60,9 @@
   width: 280px;
   height: 295px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
-  box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 2px 15px -1px rgba(233, 233, 233);
+  -moz-box-shadow: 1px 2px 15px -1px rgba(233, 233, 233);
+  box-shadow: 1px 2px 15px -1px rgba(233, 233, 233);
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -64,6 +70,7 @@
   text-align: center;
   border-radius: 10px;
   position: relative;
+  background-color: white;
 }
 
 .ItemBlock:hover img {

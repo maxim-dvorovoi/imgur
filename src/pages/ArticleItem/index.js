@@ -48,6 +48,8 @@ class ArticleItem extends Component {
         if (data['type'] == "video/mp4") {
             return (
                 <div className="Blocks">
+
+                    <div className="Category"><p>Item: {data['type']} </p></div>
                     
                     <div class="image">
                         <video controls>
@@ -76,6 +78,8 @@ class ArticleItem extends Component {
         } else  {
             return (
                 <div className="Blocks">
+
+                    <div className="Category"><p>Item: {data['type']} </p></div>
                     
                     <div class="image">
                         <img src={data['link']} alt=""/>
