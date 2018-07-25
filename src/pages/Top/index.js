@@ -53,7 +53,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <video>
                                     <source src={item['images'][0]['link']} type="video/mp4"/>
                                 </video>
@@ -73,7 +73,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <img src={item['images'][0]['link']} alt=""/>
                             </div>
                             
@@ -90,7 +90,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <video>
                                     <source src={item['link']} type="video/mp4"/>
                                 </video>
@@ -109,7 +109,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <img src={item['link']} alt=""/>
                             </div>
                             
@@ -135,7 +135,6 @@ class BlogList extends Component {
                         pageStart={0}
                         loadMore={this.loadItems.bind(this)}
                         hasMore={this.state.hasMoreItems}
-                        loader={<div className="loader" key={0}>Loading ...</div>}
                     >
                         {items} 
                     </InfiniteScroll> 

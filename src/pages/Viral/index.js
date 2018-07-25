@@ -17,9 +17,8 @@ class BlogList extends Component {
     }
 
     loadItems(page) {
-        var self = this;
-
-        fetch (`https://api.imgur.com/3/gallery/hot/viral/day/0?showViral=true&mature=false&album_previews=true`,
+        var i=0;
+        fetch (`https://api.imgur.com/3/gallery/hot/viral/day/${i}?showViral=true&mature=false&album_previews=true`,
             {
                 method: 'GET',
                 headers: {'Authorization': 'Client-ID 386ba9d7114e9e5'}
@@ -37,6 +36,7 @@ class BlogList extends Component {
             }) 
             
         })
+        i++;
     }
     
     render () {
@@ -53,7 +53,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <video>
                                     <source src={item['images'][0]['link']} type="video/mp4"/>
                                 </video>
@@ -73,7 +73,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <img src={item['images'][0]['link']} alt=""/>
                             </div>
                             
@@ -90,7 +90,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <video>
                                     <source src={item['link']} type="video/mp4"/>
                                 </video>
@@ -109,7 +109,7 @@ class BlogList extends Component {
                             className="ItemBlock"
                             key={index}
                         >
-                            <div class="crop">
+                            <div className="crop">
                                 <img src={item['link']} alt=""/>
                             </div>
                             
@@ -136,7 +136,6 @@ class BlogList extends Component {
                         pageStart={0}
                         loadMore={this.loadItems.bind(this)}
                         hasMore={this.state.hasMoreItems}
-                        loader={<div className="loader" key={0}>Loading ...</div>}
                     >
                         {items} 
                     </InfiniteScroll> 

@@ -8,7 +8,7 @@ class Footer extends Component {
             <footer className="footer">
 	            <div className="FooterBlock">
 	                <div>Максим Дворовой</div>
-	                <img src={logo} />
+	                <img src={logo} alt="cool"/>
 	            </div>
             </footer>
         )

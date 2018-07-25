@@ -8,12 +8,12 @@ class Header extends Component {
             <header className="header">
                 <div className="HeaderBlock">
                     <div className="navList">
-                        <Link to="/" class="effect-underline">
+                        <Link to="/" className="effect-underline">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Imgur_Title_Screen_Image.svg/2000px-Imgur_Title_Screen_Image.svg.png" />
                         </Link>
                         <div className="CatButtons">
-                            <Link to="/"><button class="CatButton"># viral</button></Link>
-                            <Link to="/top"><button class="CatButton"># top</button></Link>
+                            <Link to="/"><button className="CatButton"># viral</button></Link>
+                            <Link to="/top"><button className="CatButton"># top</button></Link>
                         </div>
                     </div>
                 </div>

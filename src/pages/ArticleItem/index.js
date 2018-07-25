@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import {articleItem} from '../../api/article.js'
 import Loader from '../../components/Loader'
 import './styles.css'
@@ -6,7 +7,12 @@ import './styles.css'
 class ArticleItem extends Component {
     state = {
         data: [],
+        activeLoader: false,
         comments: []
+    }
+
+    componentWillMount () {
+        this.setState({activeLoader: true})
     }
 
     componentDidMount () {
@@ -24,6 +30,7 @@ class ArticleItem extends Component {
         }).then(response => {
             this.setState({
                 data: response.data,
+                activeLoader: false
             }) 
         })
 
@@ -47,11 +54,11 @@ class ArticleItem extends Component {
         console.log(comments)
         if (data['type'] == "video/mp4") {
             return (
-                <div className="Blocks">
 
+                <div className="Blocks">
                     <div className="Category"><p>Item: {data['type']} </p></div>
-                    
-                    <div class="image">
+
+                    <div className="image">
                         <video controls>
                             <source src={data['link']} type="video/mp4"/>
                         </video>
@@ -80,8 +87,7 @@ class ArticleItem extends Component {
                 <div className="Blocks">
 
                     <div className="Category"><p>Item: {data['type']} </p></div>
-                    
-                    <div class="image">
+                    <div className="image">
                         <img src={data['link']} alt=""/>
                     </div>
                     <br/>
